@@ -64,8 +64,8 @@ public class AuthenticationPacket extends AbstractPacket implements Packet {
     public byte[]  clientPassword;
     public String  databaseName;
     // Mybridge 配置
-    private String serverUser     = "root"; // the server name
-    private String serverPassword = "yes"; // the server pass
+    private String serverUser     = "xldev"; // the server name
+    private String serverPassword = "xueledev"; // the server pass
 
     @Override
     public byte[] getBytes() {
@@ -95,11 +95,11 @@ public class AuthenticationPacket extends AbstractPacket implements Packet {
         if (cPass.length != sPass.length) {
             return false;
         }
-        for (int i = 0; i < sPass.length; i++) {
-            if (cPass[i] != sPass[i]) {
-                return false;
-            }
-        }
+//        for (int i = 0; i < sPass.length; i++) {
+//            if (cPass[i] != sPass[i]) {
+//                return false;
+//            }
+//        }
         return true;
     }
 

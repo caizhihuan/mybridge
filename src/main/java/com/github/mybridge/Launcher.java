@@ -2,18 +2,17 @@ package com.github.mybridge;
 
 
 public interface Launcher {
-	/**
-	 * 启动
-	 * 
-	 */
-	public void start();
+    /**
+     * 启动
+     */
+    void start();
 
-	/**
-	 * 初始化配置
-	 * 
-	 * @throws Exception
-	 */
-	public void init() ;
+    /**
+     * 初始化配置
+     *
+     * @throws Exception
+     */
+    void init();
 
-	public void stop();
+    void stop();
 }

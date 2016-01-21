@@ -7,9 +7,9 @@ import org.jboss.netty.handler.codec.frame.FrameDecoder;
 
 /**
  * 解码
- * 
+ *
  * @author xiebiao
- * 
+ *
  */
 public class NettyDecoder extends FrameDecoder {
 	private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory
@@ -33,6 +33,9 @@ public class NettyDecoder extends FrameDecoder {
 			// PacketHeader headerPacket = new PacketHeader();
 			// headerPacket.putBytes(header);
 			buffer.skipBytes(4);
+
+
+           // String s = new String(buffer.getb)
 			//logger.debug(StringUtils.dumpAsHex(header, header.length));
 			return buffer;
 		}

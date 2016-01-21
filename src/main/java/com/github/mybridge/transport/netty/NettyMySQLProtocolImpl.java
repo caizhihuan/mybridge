@@ -18,12 +18,12 @@ import com.github.mybridge.mysql.packet.Packet;
 
 public class NettyMySQLProtocolImpl {
 
-    private static final org.slf4j.Logger logger  = org.slf4j.LoggerFactory.getLogger(NettyMySQLProtocolImpl.class);
-    private HandshakeState                state;
-    private String                        charset = "utf-8";
-    private String                        database;
+    private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(NettyMySQLProtocolImpl.class);
+    private HandshakeState state;
+    private String charset = "utf-8";
+    private String database;
 
-    private MySQLHandler                  handler;
+    private MySQLHandler handler;
 
     public NettyMySQLProtocolImpl() {
         handler = new DefaultMySQLHandler();
